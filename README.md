@@ -235,8 +235,7 @@ Evaluate operational decisions before implementation.
 
 Identify products with the highest operational risk.
 
-![Uploading image.png…]()
-
+<img width="1664" height="1722" alt="image" src="https://github.com/user-attachments/assets/355e3d94-d11e-4864-8424-8281ac4379c0" />
 
 ### Features
 
