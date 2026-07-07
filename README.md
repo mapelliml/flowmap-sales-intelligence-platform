@@ -161,6 +161,8 @@ Executive-level overview of business performance.
 * Interactive Filters
 * Executive Business Insights
 
+<img width="1848" height="1792" alt="image" src="https://github.com/user-attachments/assets/b4add7e5-84c8-44ca-894f-0ab8ae4d79c6" />
+
 ### Visualizations
 
 * Sales Trend Analysis
