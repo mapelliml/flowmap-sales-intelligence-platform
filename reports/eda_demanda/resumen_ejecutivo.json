@@ -1,0 +1,65 @@
+{
+  "fecha_analisis": "2026-06-06 22:28:45",
+  "metricas_globales": {
+    "total_registros": 125497040,
+    "total_ventas": 1073610268.7877997,
+    "total_productos": 4036,
+    "total_familias": 33,
+    "total_promociones": 7810622
+  },
+  "tendencia": {
+    "pendiente_diaria": 345.3471258176309,
+    "direccion": "CRECIENTE"
+  },
+  "estacionalidad": {
+    "mejor_mes": "Dic",
+    "peor_mes": "Feb",
+    "mejor_dia": "Domingo",
+    "peor_dia": "Jueves"
+  },
+  "festivos": {
+    "ventas_promedio_festivos": 701779.2852535461,
+    "ventas_promedio_no_festivos": 627536.7223164106,
+    "impacto_porcentaje": 11.830791776310038
+  },
+  "promociones": {
+    "ventas_con_promo": 716972.9321160975,
+    "ventas_sin_promo": 422320.62177312776,
+    "impacto_porcentaje": 69.76981353784285,
+    "correlacion": 0.5749545809710984
+  },
+  "abc_analysis": {
+    "productos_a": 1561,
+    "productos_b": 1077,
+    "productos_c": 1398,
+    "punto_pareto_productos": 1562,
+    "punto_pareto_porcentaje": 38.701684836471756
+  },
+  "top_5_familias": [
+    {
+      "family": "GROCERY I",
+      "ventas_totales": 343461727.88600016,
+      "porcentaje_ventas": 31.99128565282806
+    },
+    {
+      "family": "BEVERAGES",
+      "ventas_totales": 216942246.0,
+      "porcentaje_ventas": 20.2067968523575
+    },
+    {
+      "family": "PRODUCE",
+      "ventas_totales": 122704678.67810005,
+      "porcentaje_ventas": 11.42916403143614
+    },
+    {
+      "family": "CLEANING",
+      "ventas_totales": 97518398.0,
+      "porcentaje_ventas": 9.083221429141771
+    },
+    {
+      "family": "DAIRY",
+      "ventas_totales": 64487256.0,
+      "porcentaje_ventas": 6.006579656956129
+    }
+  ]
+}

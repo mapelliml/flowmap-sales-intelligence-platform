@@ -1,0 +1,132 @@
+{
+  "fecha_analisis": "2026-06-07 18:45:49",
+  "metricas_globales": {
+    "total_tiendas": 54,
+    "total_cities": 22,
+    "total_clusters": 17,
+    "total_types": 5,
+    "total_registros_procesados": 125497040,
+    "total_ventas": 1073610268.7877997
+  },
+  "concentracion": {
+    "punto_80_tiendas": 32,
+    "punto_80_porcentaje": 59.25925925925925,
+    "coeficiente_gini": 44.21578838089709
+  },
+  "top_5_tiendas": [
+    {
+      "store_nbr": 44,
+      "city": "Quito",
+      "ventas_totales": 62087544.253599964,
+      "participacion_pct": 5.783061699260967
+    },
+    {
+      "store_nbr": 45,
+      "city": "Quito",
+      "ventas_totales": 54498010.41639999,
+      "participacion_pct": 5.0761446682074896
+    },
+    {
+      "store_nbr": 47,
+      "city": "Quito",
+      "ventas_totales": 50948308.06079999,
+      "participacion_pct": 4.745512365332078
+    },
+    {
+      "store_nbr": 3,
+      "city": "Quito",
+      "ventas_totales": 50481899.18509999,
+      "participacion_pct": 4.7020693311827655
+    },
+    {
+      "store_nbr": 49,
+      "city": "Quito",
+      "ventas_totales": 43420089.7855,
+      "participacion_pct": 4.04430649070869
+    }
+  ],
+  "top_5_ciudades": [
+    {
+      "city": "Quito",
+      "ventas_totales": 556723720.8300999,
+      "participacion_pct": 51.8552902310342
+    },
+    {
+      "city": "Guayaquil",
+      "ventas_totales": 122965035.4809,
+      "participacion_pct": 11.453414619416629
+    },
+    {
+      "city": "Cuenca",
+      "ventas_totales": 49167794.3142,
+      "participacion_pct": 4.579668781457796
+    },
+    {
+      "city": "Ambato",
+      "ventas_totales": 40304398.297599964,
+      "participacion_pct": 3.7540995526344183
+    },
+    {
+      "city": "Santo Domingo",
+      "ventas_totales": 35834316.037200004,
+      "participacion_pct": 3.3377396881328356
+    }
+  ],
+  "top_5_clusters": [
+    {
+      "cluster": 14,
+      "ventas_totales": 157430508.0792,
+      "participacion_pct": 14.663655206740234
+    },
+    {
+      "cluster": 6,
+      "ventas_totales": 114254327.7442001,
+      "participacion_pct": 10.642067337265996
+    },
+    {
+      "cluster": 8,
+      "ventas_totales": 107925255.69389991,
+      "participacion_pct": 10.0525543422528
+    },
+    {
+      "cluster": 11,
+      "ventas_totales": 100614269.9349,
+      "participacion_pct": 9.371582301322654
+    },
+    {
+      "cluster": 10,
+      "ventas_totales": 85322356.43339996,
+      "participacion_pct": 7.9472373647968535
+    }
+  ],
+  "clasificacion_tiendas": [
+    {
+      "Categor\u00eda": "BAJO VOLUMEN",
+      "Cantidad_Tiendas": 12,
+      "Ventas_Totales": 94272378.4515,
+      "Ventas_Promedio_Diario": 8377.305135973393,
+      "Porcentaje_Ventas": 8.7808752572702
+    },
+    {
+      "Categor\u00eda": "CR\u00cdTICA",
+      "Cantidad_Tiendas": 2,
+      "Ventas_Totales": 116585554.66999996,
+      "Ventas_Promedio_Diario": 34718.7476682549,
+      "Porcentaje_Ventas": 10.859206367468456
+    },
+    {
+      "Categor\u00eda": "EST\u00c1NDAR",
+      "Cantidad_Tiendas": 26,
+      "Ventas_Totales": 395824018.68349993,
+      "Ventas_Promedio_Diario": 9496.045921578105,
+      "Porcentaje_Ventas": 36.86850155880308
+    },
+    {
+      "Categor\u00eda": "IMPORTANTE",
+      "Cantidad_Tiendas": 14,
+      "Ventas_Totales": 466928316.98279995,
+      "Ventas_Promedio_Diario": 19928.936109040766,
+      "Porcentaje_Ventas": 43.49141681645827
+    }
+  ]
+}
