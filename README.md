@@ -179,6 +179,8 @@ Executive-level overview of business performance.
 
 Integrated demand planning and inventory monitoring environment.
 
+<img width="1696" height="2648" alt="image" src="https://github.com/user-attachments/assets/d94ae94e-9014-487f-ba2f-5de1f38a7e06" />
+
 ### Features
 
 * Forecast Horizon Selection:
@@ -208,6 +210,8 @@ Integrated demand planning and inventory monitoring environment.
 
 Evaluate operational decisions before implementation.
 
+<img width="1691" height="2111" alt="image" src="https://github.com/user-attachments/assets/4a0af249-e4bc-40ec-be13-2fecdc050a86" />
+
 ### Features
 
 * Scenario Selection
@@ -230,6 +234,9 @@ Evaluate operational decisions before implementation.
 ## 4. Critical Products Monitor
 
 Identify products with the highest operational risk.
+
+![Uploading image.png…]()
+
 
 ### Features
 
