@@ -175,4 +175,18 @@ Para consultas o problemas técnicos, contactar a:
 
 ---
 
-*Documento generado el 12/06/2026*
+Raw Data
+   ↓
+Feature Engineering
+   ↓
+Forecast Models
+   ↓
+Inventory Optimization
+   ↓
+Scenario Simulation
+   ↓
+Streamlit App
+   ↓
+Power BI Dashboard
+
+*Documento generado el 07/07/2026*
