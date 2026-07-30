@@ -1,4 +1,4 @@
-# 🚀 FlowMap Sales Intelligence Platform
+#  FlowMap Sales Intelligence Platform
 
 ### Retail Analytics · Demand Forecasting · Inventory Optimization · Scenario Simulation
 
