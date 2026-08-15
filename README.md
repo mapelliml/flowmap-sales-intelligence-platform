@@ -1,10 +1,18 @@
-# 🚀 FlowMap Sales Intelligence Platform
+#  FlowMap Sales Intelligence Platform
 
 ### Retail Analytics · Demand Forecasting · Inventory Optimization · Scenario Simulation
 
 A Streamlit application designed to support data-driven decision-making across retail, supply chain, and commercial operations.
 
-FlowMap Sales Intelligence Platform combines historical sales analytics, demand forecasting, inventory optimization, stockout risk monitoring, and scenario simulation into a single executive-grade solution.
+FlowMap Sales Intelligence Platform is an end-to-end Retail Analytics solution combining:
+
+• Streamlit Analytics Platform
+• Power BI Executive Dashboard
+• Demand Forecasting
+• Inventory Optimization
+• Scenario Simulation
+
+Built using the Corporación Favorita dataset containing more than 125 million retail transactions. Combines historical sales analytics, demand forecasting, inventory optimization, stockout risk monitoring, and scenario simulation into a single executive-grade solution.
 
 Designed for:
 
@@ -49,6 +57,33 @@ Provide a comprehensive decision-support platform capable of:
 ✔ Executive Insights & KPI Tracking
 
 ---
+
+## Dual Analytics Ecosystem
+
+This project combines two complementary analytics solutions:
+
+### 1. FlowMap Sales Intelligence Platform (Streamlit)
+
+Advanced decision-support application focused on:
+
+- Demand Forecasting
+- Inventory Optimization
+- Stockout Risk Monitoring
+- Purchasing Recommendations
+- Scenario Simulation
+
+### 2. Retail Analytics Dashboard (Power BI)
+
+Executive Business Intelligence environment focused on:
+
+- Historical Sales Analysis
+- Store Performance Monitoring
+- Product Performance Analysis
+- Commercial KPIs
+- Executive Reporting
+
+Together, both solutions provide an end-to-end retail analytics framework covering descriptive, predictive and prescriptive analytics.
+
 
 ## Main Application
 
@@ -311,21 +346,25 @@ FlowMap enables retail organizations to:
 
 ## Solution Architecture
 
-```text
-Raw Data
-    ↓
-Feature Engineering
-    ↓
-Demand Forecast Models
-    ↓
-Inventory Optimization
-    ↓
-Scenario Simulation
-    ↓
-Streamlit Analytics Platform
-    ↓
-Power BI Executive Dashboard
-```
+Raw Retail Data (125M+ Records)
+            ↓
+      Data Engineering
+            ↓
+     Feature Engineering
+            ↓
+ ┌───────────────────────┐
+ │ Historical Analytics  │
+ │      Power BI         │
+ └───────────────────────┘
+            ↓
+ ┌───────────────────────┐
+ │ Forecasting Models    │
+ │ Inventory Optimization│
+ │ Scenario Simulation   │
+ │      Streamlit        │
+ └───────────────────────┘
+            ↓
+ Executive Decision Making
 
 ---
 
@@ -339,6 +378,56 @@ Power BI Executive Dashboard
 * API-Based Deployment
 
 ---
+ ## POWER BI - Application Modules
+
+In addition to the Streamlit platform, the project includes a professional Power BI dashboard designed for executive reporting and operational analytics.
+
+### Dashboard Pages
+
+#### 1. Executive Overview
+
+Executive summary of business performance.
+
+Features:
+
+- Total Sales KPIs
+- Sales Trends
+- Year-over-Year Comparison
+- Geographic Sales Distribution
+- Top Performing Stores
+- Top Product Families
+- Executive Performance Monitoring
+
+#### 2. Store Performance
+
+Store-level analysis and benchmarking.
+
+Features:
+
+- Sales by Store
+- Store Ranking
+- Geographic Performance
+- Store Contribution Analysis
+- Comparative Store Performance
+
+
+#### 3. Product Performance
+
+Product and category intelligence.
+
+Features:
+
+- Product Ranking
+- Family Performance Analysis
+- Product Contribution
+- Top and Bottom Performers
+- Category-Level Insights
+
+
+<img width="1435" height="805" alt="POWERBI 2" src="https://github.com/user-attachments/assets/8e068d02-12a6-4680-a634-f32920eb9e44" />
+
+
+
 
 ### FLOWMAP ANALYTICS
 
