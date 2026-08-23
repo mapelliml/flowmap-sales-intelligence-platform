@@ -335,22 +335,78 @@ def find_first_existing_file(candidates):
 
 
 def safe_read_csv(file_path):
+    """
+    Lee un archivo CSV de forma segura.
+    """
+
     if file_path is None:
+        print(
+            "ERROR CSV: No se encontró la ruta del archivo.",
+            flush=True
+        )
         return pd.DataFrame()
+
     try:
+        print(
+            f"CARGANDO CSV: {file_path}",
+            flush=True
+        )
+
         df = pd.read_csv(file_path)
+
+        print(
+            f"CSV CARGADO: {len(df):,} filas y "
+            f"{len(df.columns)} columnas",
+            flush=True
+        )
+
         return normalize_columns(df)
-    except Exception:
+
+    except Exception as error:
+        print(
+            f"ERROR CSV: {type(error).__name__}: {error}",
+            flush=True
+        )
         return pd.DataFrame()
 
 
 def safe_read_parquet(file_path):
+    """
+    Lee un archivo Parquet de forma segura y muestra
+    información de diagnóstico en los logs.
+    """
+
     if file_path is None:
+        print(
+            "ERROR PARQUET: No se encontró la ruta del archivo.",
+            flush=True
+        )
         return pd.DataFrame()
+
     try:
-        df = pd.read_parquet(file_path)
+        print(
+            f"CARGANDO PARQUET: {file_path}",
+            flush=True
+        )
+
+        df = pd.read_parquet(
+            file_path,
+            engine="pyarrow"
+        )
+
+        print(
+            f"PARQUET CARGADO: {len(df):,} filas y "
+            f"{len(df.columns)} columnas",
+            flush=True
+        )
+
         return normalize_columns(df)
-    except Exception:
+
+    except Exception as error:
+        print(
+            f"ERROR PARQUET: {type(error).__name__}: {error}",
+            flush=True
+        )
         return pd.DataFrame()
 
 
@@ -509,14 +565,19 @@ def load_sales_history():
     if not df_hist_csv.empty:
         return standardize_history_df(df_hist_csv), str(history_path), "real_csv"
 
-    for horizon in ["365d", "90d", "30d", "7d"]:
-        df_fc_raw, fc_path = load_forecast_data(horizon)
-        if not df_fc_raw.empty:
-            df_generated = generate_history_from_forecast(df_fc_raw)
-            return df_generated, fc_path, "fallback_forecast"
+    
+    print(
+
+        "ERROR: No se pudo cargar sales_history_real.parquet. "
+
+        "El histórico técnico se ha desactivado para evitar "
+
+        "un consumo excesivo de memoria.",
+
+        flush=True
+    )
 
     return pd.DataFrame(), None, "none"
-
 
 # =============================================================================
 # ESTANDARIZACIÓN
@@ -2046,7 +2107,7 @@ def main():
 
     df_forecast = standardize_forecast_df(df_forecast_raw) if not df_forecast_raw.empty else pd.DataFrame()
     df_inventory = standardize_inventory_df(df_inventory_raw) if not df_inventory_raw.empty else pd.DataFrame()
-    df_history = standardize_history_df(df_history_raw) if not df_history_raw.empty else pd.DataFrame()
+    df_history = df_history_raw
     df_risk = standardize_risk_df(df_risk_raw) if not df_risk_raw.empty else pd.DataFrame()
     df_purchases = standardize_purchase_df(df_purchases_raw) if not df_purchases_raw.empty else pd.DataFrame()
     df_scenarios = standardize_scenario_df(df_scenarios_raw) if not df_scenarios_raw.empty else pd.DataFrame()
