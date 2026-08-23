@@ -1,19 +1,29 @@
+# Python
 __pycache__/
-
+*.pyc
 .ipynb_checkpoints/
 
-*.pyc
-
+# Entornos y configuraciones locales
 .env
-
 venv/
+.venv/
+.DS_Store
+Thumbs.db
 
+# Datos originales gigantes
 data/raw/
+data/processed/
+DATOS ORIGINALES/
+POWER BI/data/raw/
+POWER BI/data_processed/
 
+# Informes generados automáticamente
+reports/**/*.csv
+
+# Ignorar CSV y Parquet en general
+*.csv
 *.parquet
 
-*.csv
-
-.DS_Store
-
-Thumbs.db
+# PERMITIR únicamente los datos finales de Streamlit
+!app/data/*.csv
+!app/data/*.parquet
